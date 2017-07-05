@@ -5,6 +5,8 @@
  */
 package beta;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author khaled-pc
@@ -41,7 +43,7 @@ public class suppliers extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jComboBox1.setFont(new java.awt.Font("Zeytoon", 1, 24)); // NOI18N
@@ -102,6 +104,11 @@ public class suppliers extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jButton2.setText("أغلاق");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 130, 40));
 
         jButton4.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
@@ -117,7 +124,7 @@ public class suppliers extends javax.swing.JFrame {
         jButton3.setText("تعديل");
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 130, 40));
 
-        jLabel2.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 3, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Sakkal Majalla", 3, 48)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("البحث عن الموردين");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 340, 60));
@@ -141,6 +148,12 @@ public class suppliers extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         new add_supliers().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+setVisible(false);
+        dispose() ;    
+     
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,4 +203,12 @@ public class suppliers extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
+
+    private void Dispose(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void EXIT_ON_CLOSE(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

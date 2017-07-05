@@ -5,24 +5,17 @@
  */
 package beta;
 
-import java.awt.Toolkit;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 /**
  *
  * @author khaled-pc
  */
-public class interfacee extends javax.swing.JFrame {
+public class mainfram extends javax.swing.JFrame {
 
     /**
-     * Creates new form interfacee
+     * Creates new form mainfram
      */
-    public interfacee() {
-       
-         
-          
+    public mainfram() {
+        initComponents();
     }
 
     /**
@@ -34,25 +27,21 @@ public class interfacee extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem12 = new javax.swing.JMenuItem();
-        jMenu10 = new javax.swing.JMenu();
-        jMenuItem11 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem28 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jSeparator10 = new javax.swing.JPopupMenu.Separator();
+        jMenu14 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jSeparator8 = new javax.swing.JPopupMenu.Separator();
         jMenuItem25 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem23 = new javax.swing.JMenuItem();
-        jSeparator7 = new javax.swing.JPopupMenu.Separator();
-        jMenu13 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem15 = new javax.swing.JMenuItem();
@@ -64,6 +53,11 @@ public class interfacee extends javax.swing.JFrame {
         jMenuItem17 = new javax.swing.JMenuItem();
         jSeparator5 = new javax.swing.JPopupMenu.Separator();
         jMenuItem18 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem23 = new javax.swing.JMenuItem();
+        jSeparator7 = new javax.swing.JPopupMenu.Separator();
+        jMenu13 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         jMenuItem19 = new javax.swing.JMenuItem();
         jMenuItem24 = new javax.swing.JMenuItem();
@@ -85,29 +79,56 @@ public class interfacee extends javax.swing.JFrame {
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
         jMenuItem27 = new javax.swing.JMenuItem();
+        jMenu10 = new javax.swing.JMenu();
+        jMenuItem11 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1073, 600));
-        getContentPane().setLayout(new java.awt.CardLayout());
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/photo/minimalist-black-dark-wallpaper-pinterest-minimalistic-wallpapers.jpg"))); // NOI18N
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1290, 750));
+
+        jMenuBar1.setBackground(new java.awt.Color(102, 102, 102));
+        jMenuBar1.setForeground(new java.awt.Color(102, 102, 102));
+        jMenuBar1.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jMenuBar1.setPreferredSize(new java.awt.Dimension(449, 22));
 
         jMenu1.setText("File");
+        jMenu1.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu1.setPreferredSize(new java.awt.Dimension(31, 20));
 
         jMenuItem12.setText("Exist");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem12);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu10.setText("Admin");
-
-        jMenuItem11.setText("admin");
-        jMenu10.add(jMenuItem11);
-
-        jMenuBar1.add(jMenu10);
-
         jMenu2.setText("مخازن");
+        jMenu2.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu2.setPreferredSize(new java.awt.Dimension(41, 20));
 
         jMenuItem2.setText("الأصناف");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem2);
+
+        jMenuItem28.setText("أضافة صنف");
+        jMenuItem28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem28ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem28);
 
         jMenuItem3.setText("المخازن");
         jMenu2.add(jMenuItem3);
@@ -116,9 +137,14 @@ public class interfacee extends javax.swing.JFrame {
         jMenu2.add(jMenuItem6);
         jMenu2.add(jSeparator10);
 
+        jMenu14.setText("تقارير المخازن");
+        jMenu2.add(jMenu14);
+
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("مشتريات");
+        jMenu3.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu3.setPreferredSize(new java.awt.Dimension(55, 20));
 
         jMenuItem1.setText("فاتورة شراء");
         jMenu3.add(jMenuItem1);
@@ -129,31 +155,9 @@ public class interfacee extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setText("موردين");
-
-        jMenuItem5.setText("مورين");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem5);
-
-        jMenuItem23.setText("الأرصدة الأفتتاحية");
-        jMenuItem23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem23ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem23);
-        jMenu4.add(jSeparator7);
-
-        jMenu13.setText("تقارير الموردين");
-        jMenu4.add(jMenu13);
-
-        jMenuBar1.add(jMenu4);
-
         jMenu5.setText("مبيعات");
+        jMenu5.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu5.setPreferredSize(new java.awt.Dimension(49, 20));
 
         jMenuItem4.setText("فاتورة بيع");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
@@ -187,7 +191,35 @@ public class interfacee extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
+        jMenu4.setText("موردين");
+        jMenu4.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu4.setPreferredSize(new java.awt.Dimension(53, 20));
+
+        jMenuItem5.setText("مورين");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem5);
+
+        jMenuItem23.setText("الأرصدة الأفتتاحية");
+        jMenuItem23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem23ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem23);
+        jMenu4.add(jSeparator7);
+
+        jMenu13.setText("تقارير الموردين");
+        jMenu4.add(jMenu13);
+
+        jMenuBar1.add(jMenu4);
+
         jMenu6.setText("عملاء");
+        jMenu6.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu6.setPreferredSize(new java.awt.Dimension(41, 20));
 
         jMenuItem19.setText("العملاء");
         jMenu6.add(jMenuItem19);
@@ -209,6 +241,8 @@ public class interfacee extends javax.swing.JFrame {
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("حسابات");
+        jMenu7.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu7.setPreferredSize(new java.awt.Dimension(49, 20));
 
         jMenuItem22.setText("توريد نقدية جديدة");
         jMenu7.add(jMenuItem22);
@@ -225,6 +259,8 @@ public class interfacee extends javax.swing.JFrame {
         jMenuBar1.add(jMenu7);
 
         jMenu8.setText("شئون عاملين");
+        jMenu8.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu8.setPreferredSize(new java.awt.Dimension(83, 20));
 
         jMenuItem7.setText("الموظفين");
         jMenu8.add(jMenuItem7);
@@ -251,11 +287,24 @@ public class interfacee extends javax.swing.JFrame {
         jMenuBar1.add(jMenu8);
 
         jMenu9.setText("مساعدة");
+        jMenu9.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu9.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jMenu9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jMenu9.setPreferredSize(new java.awt.Dimension(53, 20));
 
         jMenuItem27.setText("الدعم الفني");
         jMenu9.add(jMenuItem27);
 
         jMenuBar1.add(jMenu9);
+
+        jMenu10.setText("Admin");
+        jMenu10.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
+        jMenu10.setPreferredSize(new java.awt.Dimension(48, 20));
+
+        jMenuItem11.setText("admin");
+        jMenu10.add(jMenuItem11);
+
+        jMenuBar1.add(jMenu10);
 
         setJMenuBar(jMenuBar1);
 
@@ -263,25 +312,37 @@ public class interfacee extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        new suppliers().setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem23ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
     private void jMenuItem26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem26ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem26ActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-       new suppliers().setVisible(true);
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+       System.exit(0);
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+         new items().setVisible(true);       
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem28ActionPerformed
+       new add_items().setVisible(true); 
+    }//GEN-LAST:event_jMenuItem28ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -300,31 +361,32 @@ public class interfacee extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(interfacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mainfram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(interfacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mainfram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(interfacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mainfram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(interfacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mainfram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new interfacee().setVisible(true);
-                
+                new mainfram().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
+    private javax.swing.JMenu jMenu14;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -354,6 +416,7 @@ public class interfacee extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem25;
     private javax.swing.JMenuItem jMenuItem26;
     private javax.swing.JMenuItem jMenuItem27;
+    private javax.swing.JMenuItem jMenuItem28;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;

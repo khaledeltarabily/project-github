@@ -18,7 +18,6 @@ public class Beta {
      */
     public static void main(String[] args) {
     Connection_and_Database_OPerations s=new Connection_and_Database_OPerations();
-    s.insert_bells(ZonedDateTime.now().toString(), 32355, "3m 5aled el 8by", 2, null);// TODO code application logic here
-        }
-    
+                     // TODO code application logic here;
+    }  
 }

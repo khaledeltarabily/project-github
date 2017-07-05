@@ -46,42 +46,43 @@ public class add_supliers extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 200, 40));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 220, 200, 40));
 
         jLabel4.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("تليفون الشركة");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 170, 170, 40));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 170, 40));
 
         jLabel5.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("عنوان الشركة");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 250, 160, 40));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 300, 160, 40));
 
         jTextField3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 200, 40));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 300, 200, 40));
 
         jLabel6.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("اسم المندوب");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 330, 150, 40));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 380, 150, 40));
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField4.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, 200, 40));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 380, 200, 40));
 
         jLabel7.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("تليفون المندوب");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 400, 180, 40));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 450, 180, 40));
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -90,42 +91,47 @@ public class add_supliers extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 400, 200, 40));
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 450, 200, 40));
 
         jLabel8.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("ملاحظات");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 490, 170, 50));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 540, 170, 50));
 
         jTextField6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField6.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 480, 200, 70));
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 530, 200, 70));
 
         jTextField7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField7.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 90, 200, 40));
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 140, 200, 40));
 
         jLabel9.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("اسم الشركة");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 90, 150, 40));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 140, 150, 40));
 
         jLabel2.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("كود");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 30, 90, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 80, 90, 40));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, 70, 40));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 80, 70, 40));
 
         jButton4.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jButton4.setText("حفظ");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 130, 40));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 530, 130, 40));
 
         jButton5.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 1, 24)); // NOI18N
         jButton5.setText("أغلاق");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, 130, 40));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 530, 130, 40));
 
         jComboBox1.setFont(new java.awt.Font("Zeytoon", 1, 24)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "شركات", "اشخاص" }));
@@ -134,11 +140,16 @@ public class add_supliers extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 200, 50));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 200, 50));
+
+        jLabel3.setFont(new java.awt.Font("Sakkal Majalla", 3, 48)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("أضافة  الموردين");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 340, 60));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/beta/Gray Wallpapers  Desktop Wallpapers.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 590));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 620));
 
         pack();
         setLocationRelativeTo(null);
@@ -151,6 +162,12 @@ public class add_supliers extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        setVisible(false);
+        dispose() ;
+      
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,6 +210,7 @@ public class add_supliers extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -207,4 +225,8 @@ public class add_supliers extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
+
+    private void Dispose(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

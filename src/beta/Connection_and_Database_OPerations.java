@@ -41,7 +41,7 @@ public class Connection_and_Database_OPerations {
         try{
            
             Class.forName("org.sqlite.JDBC");
-            con =DriverManager.getConnection("jdbc:sqlite:C:\\Users\\ALDAWLY\\Downloads\\adwat.db"); 
+            con =DriverManager.getConnection("jdbc:sqlite:C:\\Users\\khaled-pc\\Downloads\\adwat.db"); 
             JOptionPane.showMessageDialog(null,"connected");
             return con;
         }catch(Exception e){
@@ -318,11 +318,11 @@ void insert_employees(String emp_name,String emp_password,String emp_adress,Stri
  
 
 //ادخال اصناف9
-void insert_items(String item_name,double item_price,int warehouse_id,double item_real_price ,String notes,int sup_id){
+void insert_items(String item_name,double item_price,int warehouse_id,double item_real_price ,String notes,int sup_id,String category){
          Connection conn = null;
         try{ 
-            String sql = "INSERT INTO employees( item_name , item_price , warehouse_id , item_real_price , notes , sup_id) " +
-        "VALUES (?, ? ,? , ? , ? , ?)";
+            String sql = "INSERT INTO employees( item_name , item_price , warehouse_id , item_real_price , notes , sup_id , category ) " +
+        "VALUES (?, ? ,? , ? , ? , ? , ?)";
          conn=connect();
          PreparedStatement preparedStatement = conn.prepareStatement(sql);
          preparedStatement.setString(1,item_name);
@@ -331,6 +331,7 @@ void insert_items(String item_name,double item_price,int warehouse_id,double ite
          preparedStatement.setDouble(4, item_real_price);
          preparedStatement.setString(5, notes);
          preparedStatement.setInt(6, sup_id);
+         preparedStatement.setString(7, category);
          preparedStatement.executeUpdate(); 
          preparedStatement.close();
          JOptionPane.showMessageDialog(null,"success");
@@ -1029,6 +1030,10 @@ void update_sales(int bell_id,int item_id,int quantity){
         }
     }
    //************
+
+    void update_bells(int i, int i0, int i1, String kllo, int i2, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 
      
