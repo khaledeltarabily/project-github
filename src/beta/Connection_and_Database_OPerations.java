@@ -1000,7 +1000,6 @@ void update_sales(int bell_id,int item_id,int quantity){
          try (Connection conn = this.connect();
                 PreparedStatement pstmt = conn.prepareStatement(sql)) {           
                 pstmt.setInt(1,id);
-                pstmt.setString(2,name);
                 pstmt.executeUpdate();
                 JOptionPane.showMessageDialog(null,"success");
 
