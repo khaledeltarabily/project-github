@@ -5,6 +5,8 @@
  */
 package beta;
 
+import java.time.ZonedDateTime;
+
 /**
  *
  * @author khaled-pc
@@ -15,7 +17,8 @@ public class Beta {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+    Connection_and_Database_OPerations s=new Connection_and_Database_OPerations();
+    s.insert_bells(ZonedDateTime.now().toString(), 32355, "3m 5aled el 8by", 2, null);// TODO code application logic here
+        }
     
 }

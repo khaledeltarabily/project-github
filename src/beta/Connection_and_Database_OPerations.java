@@ -107,8 +107,8 @@ public class Connection_and_Database_OPerations {
     void insert_bells(String date,double total,String reciver_name, int emp_id,String notes){
          Connection conn = null;
         try{ 
-            String sql = "INSERT INTO bells( bell_date , bell_total , bell_reciver , emp_id , notes ) " +
-        "VALUES (?, ?, ?)";
+            String sql = "INSERT INTO bells( bell_date , bell_total , bell_reciver , emp_id , bell_notes ) " +
+        "VALUES (?, ?, ? , ? , ?)";
          conn=connect();
          PreparedStatement preparedStatement = conn.prepareStatement(sql);
          preparedStatement.setString(1,date);
