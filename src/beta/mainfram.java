@@ -81,6 +81,7 @@ public class mainfram extends javax.swing.JFrame {
         jMenuItem27 = new javax.swing.JMenuItem();
         jMenu10 = new javax.swing.JMenu();
         jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem29 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -301,8 +302,16 @@ public class mainfram extends javax.swing.JFrame {
         jMenu10.setFont(new java.awt.Font(" Abdoullah Ashgar EL-kharef", 2, 12)); // NOI18N
         jMenu10.setPreferredSize(new java.awt.Dimension(48, 20));
 
-        jMenuItem11.setText("admin");
+        jMenuItem11.setText("Admin");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu10.add(jMenuItem11);
+
+        jMenuItem29.setText("Add Admin");
+        jMenu10.add(jMenuItem29);
 
         jMenuBar1.add(jMenu10);
 
@@ -343,6 +352,10 @@ public class mainfram extends javax.swing.JFrame {
     private void jMenuItem28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem28ActionPerformed
        new add_items().setVisible(true); 
     }//GEN-LAST:event_jMenuItem28ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        new admin().setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -417,6 +430,7 @@ public class mainfram extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem26;
     private javax.swing.JMenuItem jMenuItem27;
     private javax.swing.JMenuItem jMenuItem28;
+    private javax.swing.JMenuItem jMenuItem29;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
