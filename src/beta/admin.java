@@ -145,10 +145,7 @@ public class admin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        String item_name=  jTextField7.getText();
-        int   item_id=Integer.parseInt(jTextField7.getText()) ;
-        String warehouse=jComboBox1.getSelectedItem().toString();
-
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
